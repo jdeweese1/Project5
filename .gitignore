@@ -1,3 +1,3 @@
-*.class
-*.DS_Store
-*.sublime
+.class
+.DS_Store
+.sublime
