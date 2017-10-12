@@ -1,0 +1,434 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"car",
+				"car"
+			],
+			[
+				"String",
+				"String"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"score",
+				"score"
+			],
+			[
+				"var",
+				"var1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Default/Syntax Tests.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					""
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"All Syntaxes"
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"Performance"
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"Regex Compatibility"
+				]
+			],
+			[
+				"Packages/Default/Syntax Tests.sublime-build",
+				"All Syntaxes"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 59.0,
+		"last_filter": "Budild",
+		"selected_items":
+		[
+			[
+				"Budild",
+				"Build: New Build System"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 62.0,
+		"history":
+		[
+			"python3",
+			"os.getcwd()",
+			"import os",
+			"os.",
+			"ls",
+			"import os",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project5/Customer.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project5/WorkTicket.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project5/Car.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project5/ServiceQuote.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project5/Proj5App.java",
+		"/Users/jaroddeweese/Library/Application Support/Sublime Text 3/Packages/User/JAVAC.sublime-build",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project4/Student.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project4/StudentApp.java",
+		"/Users/jaroddeweese/Desktop/I am an Acacian.",
+		"/Users/jaroddeweese/Projects/learnJS/jstut.js",
+		"/Users/jaroddeweese/Projects/learnJS/jstut.html",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Labs/Lab6/Point.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Labs/Lab6/Lab6.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Labs/Lab6/Line.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/onMyOwnLearning/formatting.java",
+		"/Users/jaroddeweese/Projects/Python/apr--/squarethetriangle.py",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS115/Webpages/Styling.css",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS115/Webpages/index.html",
+		"/Users/jaroddeweese/Projects/Python/pi.py",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/cars2/Car.java",
+		"/Users/jaroddeweese/.bash_profile",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS115/ProgrammingAssignments/2/HW_2_Pickup_Sticks.py",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS115/ProgrammingAssignments/1/DeWeese_Jarod_hw1.py",
+		"/Users/jaroddeweese/Library/Application Support/Sublime Text 3/Packages/User/Python3.sublime-build",
+		"/Users/jaroddeweese/Desktop/shortcuts.txt",
+		"/Users/jaroddeweese/.bash_history",
+		"/Users/jaroddeweese/Downloads/Proj3_Testfile2.txt",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/Student/StudentApp.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/Student/Student.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassMaterials/Wk7_Mon Makeup/Car.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassMaterials/Wk7_Mon Makeup/CarApp_Arrays.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassMaterials/Wk7_Mon Makeup/CarApp.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/cars/Student/StudentApp.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/cars/Student/Student.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/examPractice/Exam1Practice.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project3/Results.txt",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project3/dingus.txt",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project3/Proj3.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project3/Proj3_Testfile1.txt",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project3/Proj3_Testfile2.txt",
+		"/Users/jaroddeweese/Library/Application Support/Sublime Text 3/Packages/User/javadoc.sublime-build",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassMaterials/Wk5_M/Java Files/FileSum2.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassMaterials/Wk5_M/Java Files/Demo_FileIO3.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project3/dings.txt",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/cars/Car.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassMaterials/Wk5_M/Java Files/Demo_FileIO2.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassMaterials/Wk5_M/Java Files/FileWriteDemo2_Modified.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassMaterials/Wk5_M/Java Files/Review.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassMaterials/Methods.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/cars/CarApp.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/CarApp.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/Car.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/package-list",
+		"/Users/jaroddeweese/Library/Application Support/Sublime Text 3/Packages/User/cSharp.sublime-build",
+		"/Users/jaroddeweese/Projects/learncsharp/1/csharptut1_2/csharptut1_2/Program.cs",
+		"/Users/jaroddeweese/Projects/learncsharp/1/csharptut1_2/csharptut1_2/Program.exe",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Labs/Lab4.java",
+		"/Users/jaroddeweese/Downloads/Lab4_TimeDifference.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS115/Huffman.ipynb",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS115/DeWeese_Jarod_hw1.py",
+		"/Users/jaroddeweese/Desktop/file.txt",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/CodeLabs/untitled.java",
+		"/Users/jaroddeweese/Desktop/file.txt.zip",
+		"/Users/jaroddeweese/Projects/Python/apr--/upandlow.py",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassMaterials/TempConvert.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/examPractice/Exam1_2Practice.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/examPractice/Exam1_1Practice.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project2/Proj2.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/scholarships/CS_Scholars/ScholarshipApp.txt",
+		"/Users/jaroddeweese/Desktop/Proj2stabel.java",
+		"/Users/jaroddeweese/Desktop/Bubblesort.java",
+		"/Users/jaroddeweese/Desktop/mypy.py",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project1/Proj1/Proj1.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/onMyOwnLearning/Chapter2.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/onMyOwnLearning/GaddisBook/Arrays.java",
+		"/Users/jaroddeweese/Projects/learnc/ctut5/ctut5-1.c",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Labs/Lab2.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS115/markdown.mdown",
+		"/Users/jaroddeweese/Downloads/Proj1/Proj1.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Projects/Project1/Proj1.java",
+		"/Users/jaroddeweese/Desktop/grails-3.3.0/INSTALL",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/inClassAssignments/RandomNumber.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Examples/Wk1_F/Java Files/CalcInterest.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/onMyOwnLearning/UsefullMethods.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/onMyOwnLearning/switching.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/onMyOwnLearning/ConsoleIO.java",
+		"/Applications/Unity/Documentation/en/StaticFilesManual/js/highlight.js",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/onMyOwnLearning/temp.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/onMyOwnLearning/ifElse.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/onMyOwnLearning/learnJava.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/onMyOwnLearning/HelloAdult.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/stuff/Simple.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/LearningPrograms/learnJava1.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/stuff/java1",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Notes/Rectangle.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/LearningPrograms/HelloAdultu.java",
+		"/Users/jaroddeweese/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/CIS200/Notes/Lecture1.java",
+		"/private/var/tmp/WirelessDiagnostics_C2QSK0KLGKJG_2017-08-20_22.30.07/awdl.txt",
+		"/private/var/tmp/WirelessDiagnostics_C2QSK0KLGKJG_2017-08-20_22.30.07/coex_config.txt",
+		"/private/var/tmp/WirelessDiagnostics_C2QSK0KLGKJG_2017-08-20_22.30.07/coex_profiles.txt",
+		"/private/var/tmp/WirelessDiagnostics_C2QSK0KLGKJG_2017-08-20_22.30.07/dns_testing.txt",
+		"/private/var/tmp/WirelessDiagnostics_C2QSK0KLGKJG_2017-08-20_22.30.07/hosts",
+		"/private/var/tmp/WirelessDiagnostics_C2QSK0KLGKJG_2017-08-20_22.30.07/wifi_scan.txt",
+		"/Users/jaroddeweese/Projects/learnc/ctut3/ctut3-1.c",
+		"/Users/jaroddeweese/Desktop/helloworld.java",
+		"/Users/jaroddeweese/Downloads/ffmpeg-3.3.3/tests/ref/fate/sub-aqtitle",
+		"/Users/jaroddeweese/Downloads/grails-3.3.0/bin/grails.bat",
+		"/Users/jaroddeweese/Downloads/grails-3.3.0/INSTALL",
+		"/Users/jaroddeweese/.CFUserTextEncoding",
+		"/Users/jaroddeweese/.DS_Store",
+		"/Users/jaroddeweese/.Xauthority",
+		"/Users/jaroddeweese/.bash_profile.pysave",
+		"/Users/jaroddeweese/.gtk-bookmarks",
+		"/Users/jaroddeweese/.python_history",
+		"/Users/jaroddeweese/.rnd",
+		"/Users/jaroddeweese/.serverauth.12031",
+		"/Users/jaroddeweese/.serverauth.459",
+		"/Users/jaroddeweese/.viminfo",
+		"/Users/jaroddeweese/Downloads/youtube_dl-2017.8.9/docs/module_guide.rst",
+		"/Users/jaroddeweese/Downloads/youtube_dl-2017.8.9/docs/Makefile",
+		"/Users/jaroddeweese/Downloads/youtube_dl-2017.8.9/setup.cfg",
+		"/Users/jaroddeweese/Downloads/youtube_dl-2017.8.9-py2.py3-none-any.whl",
+		"/Users/jaroddeweese/Desktop/180script.lsl",
+		"/Users/jaroddeweese/Library/Application Support/Steam/steamapps/common/The Stanley Parable/thestanleyparable/cfg/video.txt",
+		"/Applications/Unity/Documentation/en/Manual/docdata/global_index.js",
+		"/Applications/Audacity/help/manual/m/skins/common/wikibits.js/303",
+		"/Users/jaroddeweese/Downloads/~$holarship app college.docx",
+		"/Users/jaroddeweese/Desktop/RealVNCBackupCodes.txt"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 214.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"print(\"",
+			"println",
+			"quoteNum",
+			"random"
+		],
+		"highlight": false,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"print(\"\\n",
+			"print"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 74.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 200.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 103.0
+	},
+	"pinned_build_system": "Packages/Java/JavaC.sublime-build",
+	"project": "Proj5.sublime-project",
+	"replace":
+	{
+		"height": 71.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Library/Mobile Documents/com~apple~CloudDocs/scholarships/SouthernPioneer/WhyShouldIReceiveThisScholarship"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 312.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 5
+	}
+}
