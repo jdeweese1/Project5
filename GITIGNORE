@@ -1,5 +1,4 @@
-.class
-.DS_Store
-.sublime
+*.DS_Store
+*.sublime
 *.DS_STORE
 *.class
