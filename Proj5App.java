@@ -53,46 +53,68 @@ public class Proj5App
 //If not a duplicate, store WorkTicket Object in Array else display message and re-enter
 			boolean hasADuplicate = false;
 //Checks for duplicates before enternig temporary object into array
-			if(i>0)//if there is already objects in the arrray we check for equality
-			{
-				for(int j = 0; j<=i-1;j++)//Loops through all the objcets that have been put into the array
-				{
-					System.out.println("Checking for equality:" +i);
-					System.out.println("Dingus" +workTicketsArray[i].toString());
-					if(tempWorkTicket.equals(workTicketsArray[i])) 
-					{
-						System.out.println("It seems you have entered a duplicate ticket, please try again");
-						j = i;
-						hasADuplicate = true;
-					}
-				}
-			}
-			if(!hasADuplicate)
-			{
+			// if(i>0)
+			// {
+			// 	for(int j = 0; j <i-1; j++ )
+			// 	{
+
+			// 	}
+			// }
+			// else
+			// {
 				workTicketsArray[i] = tempWorkTicket;
-				System.out.println("Press any key then enter to exit OR enter to enter another");
-			}
-			s.nextLine();
-			String tempString =s.nextLine();
-			if(tempString.length()> 0 || i >= MAX_SIZE_OF_ARRAY)
+				System.out.print("\nSTART "+ i+ workTicketsArray[i]);
+			// }
+
+			if(i >=50 || !wouldLikeToContinue())//sets the termination condition
 			{
 				shouldContinue = false;
 			}
-			if(i>0)
-			{
-				workTicketsArray[i]= tempWorkTicket;
-			}
 			else
 			{
-				workTicketsArray[0] = tempWorkTicket;
+				shouldContinue = true;
 			}
 			i++;
 		}while(shouldContinue);
-		final int MAX_ITERATIONS = i;
+
+		final int MAX_ITERATIONS = i-1;
 		for(int j = 0; j<=MAX_ITERATIONS; j++)
 		{
-			System.out.println(workTicketsArray[i].toString());
+			System.out.println("j =" +j);
+			System.out.println(workTicketsArray[j].toString());
 		}
 		System.out.println("All work tickets displayed.");
+		System.out.print("Would you like to search through the tickes? Enter Y)es or N)o :");
+		String tempString = s.nextLine();
+		shouldContinue = true;
+		if(tempString.toLowerCase().charAt(0) == 'y')
+		{
+			do
+			{
+				System.out.println("Do you want to search for another? Enter Y)es or N)o :");
+				tempString = s.nextLine();
+				if(tempString.toLowerCase().charAt(0) =='y')
+					shouldContinue = true;
+				else
+				{
+					shouldContinue = false;
+				}
+			}while(shouldContinue);
+		}
 	}//end main
+	public static boolean wouldLikeToContinue()
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.print("Press any key then enter to exit OR enter to enter another: ");
+		String tempString = s.nextLine();
+		//System.out.println(tempString);	
+		if(tempString.length() > 0)
+		{
+			return false;
+		}
+		else 
+		{
+			return true;
+		}
+	}
 }//end class

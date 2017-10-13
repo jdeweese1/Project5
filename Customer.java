@@ -23,7 +23,7 @@ public class Customer
 
 		Random r = new Random();
 		int tempID = r.nextInt(9999)+1;
-		custID = name.substring(0,4)+ tempID+"REMOVETHISAFTERDEBUGGING";
+		custID = name.substring(0,4)+ tempID;
 		System.out.println("Cust ID is: " + custID);
 	}
 	public boolean equals(Customer inCustomer)

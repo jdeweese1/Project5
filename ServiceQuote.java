@@ -18,7 +18,7 @@ public class ServiceQuote
 		String Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		char tempChar1 =  Alphabet.charAt(r.nextInt(26));
 		char tempChar2 = Alphabet.charAt(r.nextInt(26));
-		quoteNum = tempChar2+tempChar1+ String.valueOf(r.nextInt(9000) +1000);	
+		quoteNum = String.valueOf(tempChar2)+String.valueOf(tempChar1)+ String.valueOf(r.nextInt(9000) +1000);	
 		partsCharges = inPartsCharges;
 		laborCharges = inLaborCharges;
 	}
@@ -37,10 +37,10 @@ public class ServiceQuote
 	{
 		DecimalFormat df = new DecimalFormat("$###,###,###.##");
 		StringBuilder sb = new StringBuilder();
-		sb.append("Quote Number: " + df.format(quoteNum));	
+		sb.append("Quote Number: " + quoteNum);	
 		sb.append("\nParts Charge: " + df.format(partsCharges));
 		sb.append("\nLabor Charge: " + df.format(laborCharges));
-		sb.append("\nSales Tax: " + df.format(getSalesTax()));
+		sb.append("\nSales Tax: " + getSalesTax());
 		sb.append("\n\nTotal Estimated Charges: " + df.format(getTotalCharges()));
 		return sb.toString();
 
