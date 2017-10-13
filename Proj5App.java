@@ -63,6 +63,7 @@ public class Proj5App
 			// else
 			// {
 				workTicketsArray[i] = tempWorkTicket;
+				System.out.print("\nSTART "+ i+ workTicketsArray[i]);
 			// }
 
 			if(i >=50 || !wouldLikeToContinue())//sets the termination condition
@@ -75,12 +76,31 @@ public class Proj5App
 			}
 			i++;
 		}while(shouldContinue);
-		final int MAX_ITERATIONS = i;
+
+		final int MAX_ITERATIONS = i-1;
 		for(int j = 0; j<=MAX_ITERATIONS; j++)
 		{
-			System.out.println(workTicketsArray[i].toString());
+			System.out.println("j =" +j);
+			System.out.println(workTicketsArray[j].toString());
 		}
 		System.out.println("All work tickets displayed.");
+		System.out.print("Would you like to search through the tickes? Enter Y)es or N)o :");
+		String tempString = s.nextLine();
+		shouldContinue = true;
+		if(tempString.toLowerCase().charAt(0) == 'y')
+		{
+			do
+			{
+				System.out.println("Do you want to search for another? Enter Y)es or N)o :");
+				tempString = s.nextLine();
+				if(tempString.toLowerCase().charAt(0) =='y')
+					shouldContinue = true;
+				else
+				{
+					shouldContinue = false;
+				}
+			}while(shouldContinue);
+		}
 	}//end main
 	public static boolean wouldLikeToContinue()
 	{
