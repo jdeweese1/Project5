@@ -17,7 +17,7 @@ public class WorkTicket
 		quote = inQuote;
 		ticketNum = customer.getCustID().substring(2) 
 		+ customer.getCustID().substring(6,8)
-		+quote.getQuoteNum().substring(3,7);
+		+quote.getQuoteNum().substring(3,6);
 	}
 	public boolean equals(WorkTicket inWorkTicket)
 	{
