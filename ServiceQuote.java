@@ -37,11 +37,11 @@ public class ServiceQuote
 	{
 		DecimalFormat df = new DecimalFormat("$###,###,###.##");
 		StringBuilder sb = new StringBuilder();
-		sb.append("Quote Number: " + quoteNum);	
-		sb.append("\nParts Charge: " + df.format(partsCharges));
-		sb.append("\nLabor Charge: " + df.format(laborCharges));
-		sb.append("\nSales Tax: " + getSalesTax());
-		sb.append("\n\nTotal Estimated Charges: " + df.format(getTotalCharges()));
+		sb.append("\tQuote Number: " + quoteNum);	
+		sb.append("\n\tParts Charge: " + df.format(partsCharges));
+		sb.append("\n\tLabor Charge: " + df.format(laborCharges));
+		sb.append("\n\tSales Tax: " + getSalesTax());
+		sb.append("\n\n\tTotal Estimated Charges: " + df.format(getTotalCharges()));
 		return sb.toString();
 
 	}

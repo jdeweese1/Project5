@@ -22,9 +22,9 @@ public class Customer
 		phone =p;
 
 		Random r = new Random();
-		int tempID = r.nextInt(9999)+1;
+		int tempID = r.nextInt(9000)+1000;
 		custID = name.substring(0,4)+ tempID;
-		System.out.println("Cust ID is: " + custID);
+		//System.out.println("Cust ID is: " + custID);
 	}
 	public boolean equals(Customer inCustomer)
 	{
@@ -41,13 +41,13 @@ public class Customer
 	public String toString()
 	{
 		StringBuilder sb =new StringBuilder();
-		sb.append("Customer ID: "+ custID);
-		sb.append("\nName: " + name);
-		sb.append("\nAddress: "+ address);
-		sb.append("\nCity: " + city);
-		sb.append("\nState: " + state);
-		sb.append("\nZip code" + zip);
-		sb.append("\nPhone #: " + phone);
+		sb.append("\tCustomer ID: "+ custID);
+		sb.append("\n\tName: " + name);
+		sb.append("\n\tAddress: "+ address);
+		sb.append("\n\tCity: " + city);
+		sb.append("\n\tState: " + state);
+		sb.append("\n\tZip code" + zip);
+		sb.append("\n\tPhone #: " + phone);
 		return sb.toString();
 
 	}

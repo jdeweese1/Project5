@@ -15,7 +15,7 @@ public class WorkTicket
 		customer = inCustomer;
 		car = inCar;
 		quote = inQuote;
-		ticketNum = customer.getCustID().substring(2) 
+		ticketNum = customer.getCustID().substring(0,2) 
 		+ customer.getCustID().substring(6,8)
 		+quote.getQuoteNum().substring(3,6);
 	}
@@ -37,10 +37,14 @@ public class WorkTicket
 			return false;
 		}
 	}
+	public String getTicketNum()
+	{
+		return ticketNum;
+	}
 	public String toString()
 	{
 		StringBuilder sb = new StringBuilder();
-		sb.append(ticketNum);
+		sb.append("Ticktet Number: " +ticketNum);
 		sb.append("\n" + customer.toString());
 		sb.append("\n" + car.toString());
 		sb.append("\n" + quote.toString());

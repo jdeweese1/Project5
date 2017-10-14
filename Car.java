@@ -14,6 +14,10 @@ public class Car
 	} 
 	public Car(String inVin, String inMake, String inModel, int inYear)
 	{
+		vin = inVin;
+		make = inMake;
+		model = inModel;
+		year = inYear;
 
 	} 
 	public boolean equals(Car inCar)
@@ -31,8 +35,8 @@ public class Car
 	public String toString()
 	{
 		StringBuilder sb = new StringBuilder();
-		sb.append("VIN #: " + vin);
-		sb.append("\n " + year+ " " + make + " "+ model);
+		sb.append("\tVIN #: " + this.vin);
+		sb.append("\n\t " + this.year+ " " + this.make + " "+ this.model);
 		return sb.toString();
 	}
 

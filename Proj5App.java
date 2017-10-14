@@ -1,6 +1,6 @@
 
 //This class calls the WorkTicket class, and is called from the command line
-import java.util.Scanner;
+import java.util.*;
 public class Proj5App
 {
 	public static void main(String[] args)
@@ -64,7 +64,7 @@ public class Proj5App
 			// else
 			// {
 				workTicketsArray[i] = tempWorkTicket;
-				System.out.print("\nSTART "+ i+ workTicketsArray[i]);
+				//System.out.print("\nSTART "+ i+ workTicketsArray[i]);
 			// }
 
 			if(i >=50 || !wouldLikeToContinue())//sets the termination condition
@@ -81,7 +81,6 @@ public class Proj5App
 		final int MAX_ITERATIONS = i-1;
 		for(int j = 0; j<=MAX_ITERATIONS; j++)
 		{
-			System.out.println("j =" +j);
 			System.out.println(workTicketsArray[j].toString());
 		}
 		s.nextLine();
@@ -101,7 +100,7 @@ public class Proj5App
 					shouldContinue = true;
 					System.out.print("Enter a ticket number to search for: ");
 					tempString = s.nextLine();
-					searchArray(tempString, workTicketsArray);
+					System.out.println(searchArray(tempString, workTicketsArray, i -1));
 				}
 
 				else
@@ -125,5 +124,20 @@ public class Proj5App
 		{
 			return true;
 		}
+	}
+	public static String searchArray(String inString, WorkTicket[] inArray, int inMAX_OF_ARRAY)
+	{
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0;i<=inMAX_OF_ARRAY; i++)
+		{
+			//System.out.print(i);
+			if(inArray[i].getTicketNum().equals(inString))
+			{
+				//System.out.print("\n"+inArray[i].getTicketNum() +"\n" + inString);
+				sb.append(inArray[i].toString());
+				//return sb.toString();
+			}
+		}
+		return sb.toString();
 	}
 }//end class
