@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 .class
 .DS_Store
 .sublime
-=======
 *.DS_STORE
 *.class
->>>>>>> f8aa4461146d17cccc7ea9d832a1901fe5291ff4
+*.pdf
