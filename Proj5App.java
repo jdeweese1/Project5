@@ -41,7 +41,6 @@ public class Proj5App
 			int inYear = 1278 ;//Ds.nextInt();
 			Car tempCar = new Car(inVin, inMake, inModel, inYear);
 
-
 //Read in info for a service quote and create a ServiceQuote object
 			System.out.print("\nEnter the charge for parts: ");
 			double inPartsCharge = 8.0;//D s.nextDouble();
@@ -54,16 +53,17 @@ public class Proj5App
 //If not a duplicate, store WorkTicket Object in Array else display message and re-enter
 			boolean hasADuplicate = false;
 //Checks for duplicates before enternig temporary object into array TODO
-			// if(i>0)
-			// {
-			// 	for(int j = 0; j <i-1; j++ )
-			// 	{
+			for(int k = 0; k <= i -1; k++)
+			{
+				if(workTicketsArray[k].equals(tempWorkTicket))
+				{
+					hasADuplicate = true;
+					i--;
+					System.out.println("Duplicate Work Ticket found, please re-enter information\n");
+				}
+			}
 
-			// 	}
-			// }
-			// else
-			// {
-				workTicketsArray[i] = tempWorkTicket;
+			workTicketsArray[i] = tempWorkTicket;
 				//System.out.print("\nSTART "+ i+ workTicketsArray[i]);
 			// }
 
