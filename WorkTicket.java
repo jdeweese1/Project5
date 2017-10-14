@@ -19,6 +19,11 @@ public class WorkTicket
 		+ customer.getCustID().substring(6,8)
 		+quote.getQuoteNum().substring(3,6);
 	}
+	/**
+	*Checks to see if the two objcects are equals i.e have the same ticket number OR same Customer OR same Car OR same ServiceQuote
+	*@param inCar is the car object passed into the method that will be checked for equality
+	*@return Boolean true or false indicating if the two car objects are equals
+	*/
 	public boolean equals(WorkTicket inWorkTicket)
 	{
 		if(inWorkTicket == null)
@@ -37,10 +42,19 @@ public class WorkTicket
 			return false;
 		}
 	}
+	/**
+	*getTicketNum is a getter method to access the private ticketNum
+	@return the ticketNum of the current object
+	*/
 	public String getTicketNum()
 	{
 		return ticketNum;
 	}
+	/**
+	*returns attributes of the current WorkTicket object as a String
+	*@return String containing Ticket Number, Customer object to String, Car object to String, 
+	*and the ServiceQuote object to String
+	*/
 	public String toString()
 	{
 		StringBuilder sb = new StringBuilder();

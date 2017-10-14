@@ -22,6 +22,11 @@ public class ServiceQuote
 		partsCharges = inPartsCharges;
 		laborCharges = inLaborCharges;
 	}
+	/**
+	*Checks to see if the two objects are equals i.e have the same Quote number
+	*@param inServiceQuote is the ServiceQuote object passed into the method that will be checked for equality
+	*@return Boolean true or false indicating if the two ServiceQuote objects are equals
+	*/
 	public boolean equals(ServiceQuote inServiceQuote)
 	{
 		if(inServiceQuote.quoteNum.equals(quoteNum))
@@ -33,6 +38,10 @@ public class ServiceQuote
 			return false;
 		}
 	}
+	/**
+	* toString() returns the String info of a ServiceQuote object
+	@return Quote Number, Parts Charges, Labor Charges, Sales Tax, and estimated total charges
+	*/
 	public  String toString()
 	{
 		DecimalFormat df = new DecimalFormat("$###,###,###.##");
@@ -45,24 +54,45 @@ public class ServiceQuote
 		return sb.toString();
 
 	}
+	/**
+	*If passed in a String, getSalesTax() return back "$0" + the String passed in
+	*@param inString the that will be prepended to
+	@return $0 plus the String passed in
+	*/
 	private String getSalesTax(String inString)
 	{
 		return "$0" + inString;
 	}
+	/**
+	*calculates the dollars of tax for the combined labor and parts charge
+	*@return String containing the total amount of tax due
+	*/
 	private String getSalesTax()
 	{
 		//final double taxRate = .065;
 		double temp = (laborCharges + partsCharges) * getTaxRate();
 		return String.valueOf(temp);
 	}
+	/**
+	*getTotalCharges() returns back the base charges, plus the charges from sales tax
+	*@return Estimated total charges as a double
+	*/
 	private double getTotalCharges()
 	{
-		return (laborCharges + partsCharges) *getTaxRate();
+		return (laborCharges + partsCharges) *getTaxRate() +(laborCharges + partsCharges);
 	}
+	/**
+	*getTaxRate() returns the current tax rate as a double Ex: if it returns .065 then the tax rate is 6.5%
+	*@return the tax rate as a double
+	*/
 	private double getTaxRate()
 	{
 		return .065;
 	}
+	/**
+	*getQuoteNum() returns the quote Number of the current object
+	*@return Returns the quote Number as a String
+	*/
 	public String getQuoteNum()
 	{
 		return quoteNum;

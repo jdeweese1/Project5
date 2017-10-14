@@ -1,8 +1,20 @@
 
-//This class calls the WorkTicket class, and is called from the command line
+/**
+*This class calls the WorkTicket class, and is called from the command line
+*It's purpose is to get input from the user for the various pieces of information you might need to have on a work ticke at a body shop
+*It allows the user to input information for up to 50 objects and stores them in an array
+*It will also allow to the user to search through said array for tickets
+*@author Jarod DeWeese
+*@version 5
+*/
 import java.util.*;
 public class Proj5App
 {
+	/**
+	*This is the main method, it creates an array of length 50
+	*and stores objects in it, then allows the user to search through
+	*@param args is a placeholder
+	*/
 	public static void main(String[] args)
 	{
 		Scanner s = new Scanner(System.in);
@@ -15,7 +27,7 @@ public class Proj5App
 		do
 		{
 			System.out.print("At the beginning of dowhile and i is :" +i);
-//read in customer info and create a temporary Customer object
+		//read in customer info and create a temporary Customer object
 			System.out.print("\nEnter the customer's name: ");
 			String n = "Customername" ;//D s.nextLine();
 			System.out.print("\nEnter the customer's address: ");
@@ -30,7 +42,7 @@ public class Proj5App
 			String p = "tahu" ;//Ds.nextLine();
 			Customer tempCustomer = new Customer(n,a,c,ss,z,p);
 
-//-Read in info for a car and create a Car object
+			//-Read in info for a car and create a Car object
 			System.out.print("\nEnter the of the VIN: ");
 			String inVin = "VINVIN" ;//Ds.nextLine();
 			System.out.print("\nEnter the make of the car: ");
@@ -41,18 +53,18 @@ public class Proj5App
 			int inYear = 1278 ;//Ds.nextInt();
 			Car tempCar = new Car(inVin, inMake, inModel, inYear);
 
-//Read in info for a service quote and create a ServiceQuote object
+			//Read in info for a service quote and create a ServiceQuote object
 			System.out.print("\nEnter the charge for parts: ");
 			double inPartsCharge = 8.0;//D s.nextDouble();
 			System.out.print("\nEnter the charge for labor: ");
 			double inLaborCharge = s.nextDouble();
-//Create temporary ServiceQuote object			
+			//Create temporary ServiceQuote object			
 			ServiceQuote tempServiceQuote = new ServiceQuote(inPartsCharge, inLaborCharge);
-//Create a temporary WorkTicket object
+			//Create a temporary WorkTicket object
 			WorkTicket tempWorkTicket = new WorkTicket(tempCustomer, tempCar, tempServiceQuote);
-//If not a duplicate, store WorkTicket Object in Array else display message and re-enter
+			//If not a duplicate, store WorkTicket Object in Array else display message and re-enter
 			boolean hasADuplicate = false;
-//Checks for duplicates before enternig temporary object into array TODO
+			//Checks for duplicates before enternig temporary object into array TODO
 			for(int k = 0; k <= i -1; k++)
 			{
 				if(workTicketsArray[k].equals(tempWorkTicket))
@@ -110,6 +122,11 @@ public class Proj5App
 			}while(shouldContinue);
 		}
 	}//end main
+	/**
+	*Gets input from the user to see if they would like to continue
+	*@return Boolean true or false indicating if the user would like to continue
+	
+	*/
 	public static boolean wouldLikeToContinue()
 	{
 		Scanner s = new Scanner(System.in);
@@ -125,6 +142,13 @@ public class Proj5App
 			return true;
 		}
 	}
+	/**
+	*Searches the Array passed in to see if any workticket's ticket Numbers is equals to inString
+	*@param inString is the String to search through the Array to find a match
+	*@param inArray Is the Workticket[] array to search through for a match
+	*@param inMAX_OF_ARRAY Is the upper bound index of the array to search i.e. the method won't search past that index
+
+	*/
 	public static String searchArray(String inString, WorkTicket[] inArray, int inMAX_OF_ARRAY)
 	{
 		StringBuilder sb = new StringBuilder();

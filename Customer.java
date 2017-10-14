@@ -26,6 +26,11 @@ public class Customer
 		custID = name.substring(0,4)+ tempID;
 		//System.out.println("Cust ID is: " + custID);
 	}
+	/**
+	*Checks to see if the two objcects are equals i.e have the same CustID number
+	*@param inCustomer is the Customer object passed into the method that will be checked for equality
+	*@return Boolean true or false indicating if the two Customer objects are equals
+	*/
 	public boolean equals(Customer inCustomer)
 	{
 		if(custID.equals(inCustomer.custID))
@@ -38,6 +43,10 @@ public class Customer
 		}
 
 	}
+	/**
+	*toString() returns the CUSTID, name, address, city, state, zip, and phone number of the customer
+	*@return String cotaining the CUSTID, name, address, city, state, zip, and phone number of the customer
+	*/
 	public String toString()
 	{
 		StringBuilder sb =new StringBuilder();
@@ -51,10 +60,19 @@ public class Customer
 		return sb.toString();
 
 	}
+	/**
+	*getCustomerName() returns back the customer's name
+	*@return The name of the customer as a String
+	*/
+
 	public String getCustomerName()
 	{
 		return name;
 	}
+	/**
+	*getCustID() returns back the customer's ID
+	*@return The Customer ID of the customer as a String
+	*/
 	public String getCustID()
 	{
 		return custID;
