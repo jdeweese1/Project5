@@ -7,7 +7,8 @@ public class Proj5App
 	{
 		Scanner s = new Scanner(System.in);
 		final int MAX_SIZE_OF_ARRAY = 50;
-		boolean shouldContinue = true;		
+		boolean shouldContinue = true;
+		String tempString;	
 
 		WorkTicket[] workTicketsArray = new WorkTicket[MAX_SIZE_OF_ARRAY];
 		int i = 0;
@@ -52,7 +53,7 @@ public class Proj5App
 			WorkTicket tempWorkTicket = new WorkTicket(tempCustomer, tempCar, tempServiceQuote);
 //If not a duplicate, store WorkTicket Object in Array else display message and re-enter
 			boolean hasADuplicate = false;
-//Checks for duplicates before enternig temporary object into array
+//Checks for duplicates before enternig temporary object into array TODO
 			// if(i>0)
 			// {
 			// 	for(int j = 0; j <i-1; j++ )
@@ -83,18 +84,26 @@ public class Proj5App
 			System.out.println("j =" +j);
 			System.out.println(workTicketsArray[j].toString());
 		}
+		s.nextLine();
 		System.out.println("All work tickets displayed.");
-		System.out.print("Would you like to search through the tickes? Enter Y)es or N)o :");
-		String tempString = s.nextLine();
-		shouldContinue = true;
-		if(tempString.toLowerCase().charAt(0) == 'y')
+		// System.out.print("Would you like to search through the tickes? Enter Y)es or N)o :");
+		// String tempString = s.nextLine();
+		// shouldContinue = true;
+		// if(tempString.toLowerCase().charAt(0) == 'y')
 		{
 			do
 			{
-				System.out.println("Do you want to search for another? Enter Y)es or N)o :");
+				System.out.print("Do you want to search for Work Tickets? Enter Y)es or N)o :");
 				tempString = s.nextLine();
-				if(tempString.toLowerCase().charAt(0) =='y')
+				System.out.println();
+				if(tempString != null && tempString.toLowerCase().charAt(0) =='y')
+				{
 					shouldContinue = true;
+					System.out.print("Enter a ticket number to search for: ");
+					tempString = s.nextLine();
+					searchArray(tempString, workTicketsArray);
+				}
+
 				else
 				{
 					shouldContinue = false;
