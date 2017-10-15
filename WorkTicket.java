@@ -1,4 +1,10 @@
-
+/**
+*This class calls is called by the Proj5App class
+*This class contains constructors and methods for Car objects such as the equals method and the toString method
+*
+*@author Jarod DeWeese
+*@version 5
+*/
 //This class is called by the Proj5App.java class and calls the Customer, Car, and ServiceQuote classes
 import java.text.*;
 import java.util.*;
@@ -16,8 +22,8 @@ public class WorkTicket
 		car = inCar;
 		quote = inQuote;
 		ticketNum = customer.getCustID().substring(0,2) 
-		+ customer.getCustID().substring(6,8)
-		+quote.getQuoteNum().substring(3,6);
+		+ customer.getCustID().substring(4,6)
+		+quote.getQuoteNum().substring(2,6);
 	}
 	/**
 	*Checks to see if the two objcects are equals i.e have the same ticket number OR same Customer OR same Car OR same ServiceQuote
@@ -44,7 +50,7 @@ public class WorkTicket
 	}
 	/**
 	*getTicketNum is a getter method to access the private ticketNum
-	@return the ticketNum of the current object
+	*@return the ticketNum of the current object
 	*/
 	public String getTicketNum()
 	{
@@ -58,7 +64,7 @@ public class WorkTicket
 	public String toString()
 	{
 		StringBuilder sb = new StringBuilder();
-		sb.append("Ticktet Number: " +ticketNum);
+		sb.append("Ticket Number: " +ticketNum);
 		sb.append("\n" + customer.toString());
 		sb.append("\n" + car.toString());
 		sb.append("\n" + quote.toString());

@@ -1,3 +1,10 @@
+/**
+*This class calls is called by the WorkTicket class
+*This class contains constructors and methods for ServiceQuote objects such as the equals method and the toString, getQuoteNum, getTaxRate, getSalesTax methods
+*
+*@author Jarod DeWeese
+*@version 5
+*/
 //This class is called by the WorkTicket class
 import java.text.*;
 import java.util.*;
@@ -69,9 +76,9 @@ public class ServiceQuote
 	*/
 	private String getSalesTax()
 	{
-		//final double taxRate = .065;
+		DecimalFormat df = new DecimalFormat("$##,###.##");
 		double temp = (laborCharges + partsCharges) * getTaxRate();
-		return String.valueOf(temp);
+		return String.valueOf(df.format(temp));
 	}
 	/**
 	*getTotalCharges() returns back the base charges, plus the charges from sales tax

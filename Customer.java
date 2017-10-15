@@ -1,4 +1,10 @@
-//This class is called by the WorkTicket class
+/**
+*This class calls is called by the WorkTicket class
+*This class contains constructors and methods for Customer objects such as the equals method, toString, getCustomerName, and get CustID
+*
+*@author Jarod DeWeese
+*@version 5
+*///This class is called by the WorkTicket class
 import java.util.*;
 public class Customer
 {
@@ -57,6 +63,7 @@ public class Customer
 		sb.append("\n\tState: " + state);
 		sb.append("\n\tZip code" + zip);
 		sb.append("\n\tPhone #: " + phone);
+		sb.append("\n");
 		return sb.toString();
 
 	}

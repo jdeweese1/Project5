@@ -1,3 +1,10 @@
+/**
+*This class calls is called by the WorkTicket class
+*This class contains constructors and methods for Car objects such as the equals method and the toString method
+*
+*@author Jarod DeWeese
+*@version 5
+*/
 //This class is called by the WorkTicket class
 
 import java.util.*;
@@ -44,7 +51,7 @@ public class Car
 	{
 		StringBuilder sb = new StringBuilder();
 		sb.append("\tVIN #: " + this.vin);
-		sb.append("\n\t " + this.year+ " " + this.make + " "+ this.model);
+		sb.append("\n\t " + this.year+ " " + this.make + " "+ this.model+"\n");
 		return sb.toString();
 	}
 

@@ -1,4 +1,3 @@
-
 /**
 *This class calls the WorkTicket class, and is called from the command line
 *It's purpose is to get input from the user for the various pieces of information you might need to have on a work ticke at a body shop
@@ -26,38 +25,37 @@ public class Proj5App
 		int i = 0;
 		do
 		{
-			System.out.print("At the beginning of dowhile and i is :" +i);
+			// System.out.print("At the beginning of dowhile and i is :" +i);
 		//read in customer info and create a temporary Customer object
 			System.out.print("\nEnter the customer's name: ");
-			String n = "Customername" ;//D s.nextLine();
+			String n =  s.nextLine();
 			System.out.print("\nEnter the customer's address: ");
-			String a = "CustomerAddress" ;//D s.nextLine();
+			String a = s.nextLine();
 			System.out.print("\nEnter the customer's city: ");
-			String c = "Manhattan KS" ;//D s.nextLine();
+			String c = s.nextLine();
 			System.out.print("\nEnter the customer's state:");
-			String ss = "KS" ;//Ds.nextLine();
+			String ss =s.nextLine();
 			System.out.print("\nEnter the customer's zip: ");
-			String z = "6724" ;//Ds.nextLine();
+			String z = s.nextLine();
 			System.out.print("\nEnter the customer's phone #: ");
-			String p = "tahu" ;//Ds.nextLine();
+			String p = s.nextLine();
 			Customer tempCustomer = new Customer(n,a,c,ss,z,p);
 
 			//-Read in info for a car and create a Car object
 			System.out.print("\nEnter the of the VIN: ");
-			String inVin = "VINVIN" ;//Ds.nextLine();
+			String inVin = s.nextLine();
 			System.out.print("\nEnter the make of the car: ");
-			String	inMake = "Ford" ;//Ds.nextLine();
+			String	inMake = s.nextLine();
 			System.out.print("\nEnter the model of the car: ");
-			String inModel = "Fiesta" ;//Ds.nextLine();
+			String inModel = s.nextLine();
 			System.out.print("\nEnter the year of the car: ");
-			int inYear = 1278 ;//Ds.nextInt();
+			int inYear = Integer.parseInt(s.nextLine());
 			Car tempCar = new Car(inVin, inMake, inModel, inYear);
-
 			//Read in info for a service quote and create a ServiceQuote object
 			System.out.print("\nEnter the charge for parts: ");
-			double inPartsCharge = 8.0;//D s.nextDouble();
+			double inPartsCharge = Double.parseDouble(s.nextLine());
 			System.out.print("\nEnter the charge for labor: ");
-			double inLaborCharge = s.nextDouble();
+			double inLaborCharge = Double.parseDouble(s.nextLine());
 			//Create temporary ServiceQuote object			
 			ServiceQuote tempServiceQuote = new ServiceQuote(inPartsCharge, inLaborCharge);
 			//Create a temporary WorkTicket object
@@ -95,8 +93,8 @@ public class Proj5App
 		{
 			System.out.println(workTicketsArray[j].toString());
 		}
-		s.nextLine();
-		System.out.println("All work tickets displayed.");
+		//s.nextLine();
+		System.out.println("All work tickets displayed.\n");
 		// System.out.print("Would you like to search through the tickes? Enter Y)es or N)o :");
 		// String tempString = s.nextLine();
 		// shouldContinue = true;
@@ -125,21 +123,21 @@ public class Proj5App
 	/**
 	*Gets input from the user to see if they would like to continue
 	*@return Boolean true or false indicating if the user would like to continue
-	
+	*
 	*/
 	public static boolean wouldLikeToContinue()
 	{
 		Scanner s = new Scanner(System.in);
-		System.out.print("Press any key then enter to exit OR enter to enter another: ");
-		String tempString = s.nextLine();
+		System.out.print("Press N enter to exit OR Y to enter another: ");
+		String tempString = s.nextLine().toLowerCase();
 		//System.out.println(tempString);	
-		if(tempString.length() > 0)
+		if(tempString.charAt(0) == 'y')
 		{
-			return false;
+			return true;
 		}
 		else 
 		{
-			return true;
+			return false;
 		}
 	}
 	/**
@@ -147,7 +145,7 @@ public class Proj5App
 	*@param inString is the String to search through the Array to find a match
 	*@param inArray Is the Workticket[] array to search through for a match
 	*@param inMAX_OF_ARRAY Is the upper bound index of the array to search i.e. the method won't search past that index
-
+	*
 	*/
 	public static String searchArray(String inString, WorkTicket[] inArray, int inMAX_OF_ARRAY)
 	{
